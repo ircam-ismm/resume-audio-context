@@ -1,0 +1,23 @@
+{
+  "name": "@ircam/resume-audio-context",
+  "version": "1.0.0",
+  "description": "simple one-liner utility to resume audio context",
+  "authors": [
+    "Benjamin Matuszewski"
+  ],
+  "main": "src/resumeContext.js",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ircam-ismm/resume-audio-context"
+  },
+  "bugs": {
+    "url": "https://github.com/ircam-ismm/resume-audio-context/issues"
+  },
+  "keywords": [
+    "web audio",
+    "utils",
+    "resume context"
+  ],
+  "dependencies": {}
+}

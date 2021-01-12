@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+  <h1 style="font-family: arial"></h1>
+  <script type="module">
+    import { resumeAudioContext } from '../resumeAudioContext.js';
+
+    (async function() {
+      const audioContext = new AudioContext();
+      await resumeAudioContext(audioContext);
+
+      console.log('audioContext resumed');
+      const $title = document.querySelector('h1');
+      $title.textContent = 'WebAudio Context Resumed';
+
+      const now = audioContext.currentTime;
+      const osc = audioContext.createOscillator();
+      osc.connect(audioContext.destination);
+      osc.start(now);
+      osc.stop(now + 0.05);
+    }());
+  </script>
+
+</body>
+</html>
