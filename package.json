@@ -1,6 +1,6 @@
 {
   "name": "@ircam/resume-audio-context",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple one-liner utility to resume audio context",
   "authors": [
     "Benjamin Matuszewski"
