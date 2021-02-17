@@ -1,6 +1,6 @@
 # `@ircam/resume-audio-context`
 
-> simple one-liner utility to resume audio context
+> simple one-liner utility to resume audio context. The utility creates a full-screen button that waits for a user interaction (e.g. a 'click' event) to resume the audioContext and resolve the promise.
 
 ## Install
 
@@ -13,11 +13,12 @@ npm install --save @ircam/resume-audio-context
 ```js
 import { resumeAudioContext } from '@ircam/resume-audio-context';
 
-    (async function() {
-      const audioContext = new AudioContext();
-      await resumeAudioContext(audioContext);
-      console.log('audioContext resumed');
-    }());
+const audioContext = new AudioContext();
+
+(async function() {
+  await resumeAudioContext(audioContext);
+  console.log('audioContext resumed');
+}());
 ```
 
 ## License

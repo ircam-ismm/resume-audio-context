@@ -5,7 +5,7 @@
   "authors": [
     "Benjamin Matuszewski"
   ],
-  "main": "src/resumeAudioContext.js",
+  "main": "resumeAudioContext.js",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
